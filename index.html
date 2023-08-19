@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="nav">
+                <h1>Flash Cart</h1>
+                <div>
+                    <button onclick="showCreateCartBox()">New Cart</button>
+                    <button onclick="delCarts()">Del Cart</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="createBox">
+            <h2>Create FlashCart</h2>
+            <label for="question">Question</label>
+            <textarea id="question"></textarea>
+            <br>
+            <label for="answer">Answer</label>
+            <textarea id="answer"></textarea>
+            <button onclick="addFlashCart()">Save</button>
+            <button onclick="hideCreateBox()">Close</button>
+        </div>
+        <div class="flashCarts"></div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
